@@ -7,7 +7,7 @@ with open('secrets.toml', 'r') as f:
 openai.api_key = config['OPENAI_KEY']
 
 response = openai.ChatCompletion.create(
-  model="gpt-3.5-turbo",
+  model="gpt-4",
   messages=[
         {"role": "system", "content": "You are a helpful assistant."},
         {"role": "user", "content": "Who won the world series in 2020?"},
